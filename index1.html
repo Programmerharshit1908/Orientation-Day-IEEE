@@ -1,10 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>IEEE Orientation Day</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Innovators Conference 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="IEEEevent.css"/>
+
 </head>
 <body>
-    <h1>Welcome to IEEE Event!</h1>
-    <p>This is your GitHub Pages site.</p>
+  <!-- Dark Mode  -->
+  <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="reveal">Grid Tech: Where Energy Meets Code - Powering the Future with Intelligent Systems</h1>
+      <p class="reveal">Grid Tech combines energy systems with smart code to optimize power flow and enable cleaner energy solutions.</p>
+      <div class="reveal">
+        <p><i class="fas fa-calendar-alt"></i> August 18-20, 2025 | <i class="fas fa-map-marker-alt"></i> MITS College, Gwalior</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About The Event</h2>
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="https://social-innovation.hitachi/-/media/project/hitachi/sib/en-us/think-ahead/energy/electrifying-the-world-sustainably/images/digital-power-grids.ashx?la=en-US&upd=20210201053011Z&hash=2F3FB91AF984E93974B70F44977580C7" alt="Tech Conference">
+        </div>
+        <div class="about-content">
+          <div class="reveal">
+            <p>Explore how code is revolutionizing energy systems at Grid Tech 2024. Connect with innovators building the intelligent power grids of tomorrow through tech demos and expert sessions.</p>
+          </div>
+          <div class="about-features">
+            <div class="feature-item reveal">
+              <div class="feature-icon"><i class="fas fa-microphone"></i></div>
+              <div>
+                <h3>Keynote Speeches</h3>
+                <p>Learn from industry leaders and visionaries</p>
+              </div>
+            </div>
+            <div class="feature-item reveal">
+              <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <h3>Hands-on Workshops</h3>
+                <p>Practical sessions on emerging technologies</p>
+              </div>
+            </div>
+            <div class="feature-item reveal">
+              <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+              <div>
+                <h3>Networking</h3>
+                <p>Connect with professionals and innovators</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal">Event Highlights</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="https://b1181394.smushcdn.com/1181394/wp-content/uploads/sites/1140/20240211041227_IMG_4465team-e1727466445370-1003x1024.jpg?lossy=2&strip=1&webp=1" alt="Keynote Speaker">
+          <div class="gallery-caption">
+            <h3>Keynote Sessions</h3>
+            <p>Inspirational talks from industry leaders</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cluhmjtU9laQgS03LA6CJ9kpdW-8v3YzzA&s" alt="Workshop">
+          <div class="gallery-caption">
+            <h3>Interactive Workshops</h3>
+            <p>Hands-on learning experiences</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://b1181394.smushcdn.com/1181394/wp-content/uploads/sites/1140//IMG-20240206-WA0003.jpg?lossy=2&strip=1&webp=1" alt="Networking">
+          <div class="gallery-caption">
+            <h3>Networking</h3>
+            <p>Connect with like-minded professionals</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://" alt="Exhibition">
+          <div class="gallery-caption">
+            <h3>Tech Exhibition</h3>
+            <p>Discover cutting-edge innovations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Countdown Section -->
+  <section class="section countdown" id="countdown">
+    <div class="container">
+      <h2 class="section-title reveal">Countdown to Event</h2>
+      <div class="time-boxes">
+        <div class="time-box reveal">
+          <span id="days">00</span>
+          Days
+        </div>
+        <div class="time-box reveal">
+          <span id="hours">00</span>
+          Hours
+        </div>
+        <div class="time-box reveal">
+          <span id="minutes">00</span>
+          Minutes
+        </div>
+        <div class="time-box reveal">
+          <span id="seconds">00</span>
+          Seconds
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section class="section register" id="register">
+    <div class="container">
+      <h2 class="section-title reveal">Register Now</h2>
+      <div class="register-form">
+        <form id="registrationForm">
+          <div class="form-group reveal">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group reveal">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group reveal">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" required>
+          </div>
+          <div class="form-group reveal">
+            <label for="message" class="form-label">Additional Information</label>
+            <textarea id="message" class="form-control"></textarea>
+          </div>
+          <div class="reveal">
+            <button type="submit" class="btn">Submit Registration</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="   " class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="   " class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="   " class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="   " class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2025 Tech Innovators Conference. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="IEEEevent.js"></script>
 </body>
 </html>
+
